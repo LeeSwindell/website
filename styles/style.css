@@ -1,0 +1,115 @@
+@font-face {
+  font-family: mono;
+  src: url(../fonts/RobotoMono.ttf);
+}
+/* Colors: (violet #a78bfa)(white #f0f9ff) (black #1f2937) */
+
+body {
+  font-family: mono;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes hover {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+
+.box {
+  display: inline-block;
+  color: #1f2937;
+  margin: 1vw;
+  display: inline-table;
+}
+
+.box-img {
+  width: 30vw;
+  height: 15vw;
+  object-fit: contain;
+}
+
+.box-img:hover {
+  animation-name: hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.box-title {
+  font-size: 30px;
+  text-align: center;
+  width: 30vw;
+  color:#1f2937;
+}
+
+.box-text {
+  font-size: 20px;
+  text-align: center;
+  width: 30vw;
+  color:#1f2937;
+}
+
+.box-time {
+  font-size: 18px;
+  text-align: center;
+  width: 30vw;
+}
+
+.link {
+  color: #789;
+}
+
+.link:hover {
+  animation-name: hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#boxes {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#title-box {
+  background-color: #1f2937;
+  padding: 30px;
+}
+
+#title {
+  text-align: center;
+  font-size: 4.4vw;
+  color: #f0f9ff;
+}
+
+#subtitle {
+  font-size: 2.2vw;
+  text-align: center;
+  color: #a78bfa;
+}
+
+#link-row {
+  font-size: 2.2vw;
+  padding: 20px;
+  background-color: #eee;
+  text-align: center;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 4;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.etching {
+  animation: dash 4s linear infinite;
+  /* animation-play-state: paused; */
+}

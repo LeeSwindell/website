@@ -1,0 +1,28 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "php -S localhost:8000",
+    "lint": "npx eslint . --fix"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "website",
+    "liam",
+    "ilan"
+  ],
+  "bugs": {
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
