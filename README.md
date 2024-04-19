@@ -28,4 +28,4 @@ The file `scripts/data.js` contains a list of objects, each one representing a d
   }
 ```
 
-Just add one of these objects to the list to add an item to the site.
+Add one of these objects to the list change the site.
