@@ -71,6 +71,11 @@ a {
   animation-fill-mode: forwards;
 }
 
+.current-page {
+  color: #a78bfa;
+  font-weight: bold;
+}
+
 #boxes {
   text-align: center;
   padding: 20px 0;

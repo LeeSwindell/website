@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,14 +16,24 @@
     <meta property="og:url" content="replace with url" />
     <meta property="og:image" content="favicon.ico" />
     <meta property="og:description" content="Portfolio of Lee Swindell" />
+    <!-- Cloudflare Web Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "60cd2415359d43399a370c0ca76978ed"}'
+    ></script>
+    <!-- End Cloudflare Web Analytics -->
   </head>
   <body>
     <div id="title-box">
       <div id="title">Lee Swindell</div>
-      <div id="subtitle">Software Engineer [Go | ReactJS | Python | C++]</div>
+      <div id="subtitle">SWE/SRE [Go | Python | React | OCaml | K8s]</div>
     </div>
 
     <div id="link-row">
+      <a class="link current-page" href="/">Home</a>
+      <a class="link" href="/about">About</a>
+      <!-- <a class="link" href="/blog/">Blog</a> -->
       <a class="link" href="https://github.com/leeswindell">Github</a>
       <a class="link" href="https://www.linkedin.com/in/lee-swindell-373200169/"
         >LinkedIn</a
@@ -31,61 +41,6 @@
     </div>
 
     <div id="boxes"></div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let val = 10;
-        let sw = window.innerWidth;
-
-        // Create elements
-        let heading = document.createElement("h1");
-        let test = document.querySelectorAll("div");
-        console.log(test);
-        [...test].map((t) => {
-          t.textContent = "teeeeest";
-        });
-
-        headers = document.querySelectorAll("div");
-        console.log(headers);
-
-        // Set text content
-        heading.style = "font-size: 50px;";
-        heading.textContent = "columns: " + val + "; screen width: " + sw;
-
-        // Set attribute
-        // This is the important part!!!!
-        heading.setAttribute("col-val", val);
-
-        // Append elements to the container
-        document.body.prepend(heading);
-
-        function setText(val) {
-          val = heading.getAttribute("col-val");
-          heading.textContent = "columns: " + val + "; screen width: " + sw;
-        }
-
-        // Check screen width and set col-val accordingly.
-        function checkScreenWidth() {
-          sw = window.innerWidth;
-          setText(sw);
-          if (window.innerWidth > 600 && window.innerWidth < 1000) {
-            console.log("screen > 600", window.innerWidth);
-            val = 6;
-            // heading.textContent = "columns: " + val + "; screen width: " + sw;
-            heading.setAttribute("col-val", val);
-          } else {
-            val = 10;
-            heading.setAttribute("col-val", val);
-          }
-          setText(val, sw);
-        }
-
-        // Call the function initially and listen for window resize events
-        checkScreenWidth();
-        window.addEventListener("resize", checkScreenWidth);
-      });
-    </script>
-
     <script src="scripts/data.js"></script>
     <script src="scripts/index.js"></script>
   </body>
